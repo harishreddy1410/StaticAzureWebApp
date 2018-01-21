@@ -1,0 +1,162 @@
+@colorWhite : white;
+@colorCrimson: #de0a32 ;
+@colorYellow:yellow;
+@colorHeaderHover: #0adede;
+body {
+    background: @colorCrimson;
+    color: @colorWhite;
+    margin-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar-inverse {
+    background-color: @colorCrimson !important;
+    color: @colorWhite !important;
+    font-family: 'Open Sans', sans-serif;
+    border:none;
+}
+.navbar-header *, .navbar-nav *,footer{
+    color: @colorWhite !important;
+    font-weight:bold;
+    &:hover{
+        color:@colorHeaderHover !important;
+    }
+}
+legend {
+    color: @colorWhite;
+}
+ body p a{
+     text-decoration:underline;
+     color:@colorWhite;
+     &:hover{
+         color:@colorYellow;
+     }
+ }
+.profile-img {
+    max-width: 300px;margin-bottom:20px;
+}
+.body-content {
+    .item img {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+.profile-img {
+    max-width: 300px;
+}
+.btn-success {
+    background-color:cyan;
+    color:darkblue;
+    &:hover{
+        background-color:darkcyan;
+        color:@colorWhite;
+    }
+}
+.search-icon {
+    float: right;
+    color: wheat;
+    position: absolute !important;
+    right: 5px;
+    top: 6px;
+    font-size: 24px;
+}
+/*----------------------
+    Generic classes - start
+----------------------*/
+.no-padding {
+    padding: 0px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+/*----------------------
+    Generic classes - end
+----------------------*/
+/*-----------------------
+    Products tiles - start
+-----------------------*/
+.item-container {
+    width: 280px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+.rating-container {
+    padding: 2px 5px;
+    display: inline;
+    background-color: darkolivegreen;
+    color: white;
+    left: 0;
+    top: 10px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+#products .carousel img {
+    max-height: 250px;
+}
+
+#products .carousel-inner {
+    min-height: 250px;
+}
+
+#products .panel-heading {
+    white-space: nowrap;overflow:hidden;
+}
+
+#products {
+    text-align: center;
+
+    .panel-footer {
+        span.glyphicon {
+            font-size: 14px;
+            font-weight: 700;
+            color: orangered;
+        }
+
+        span.added > .glyphicon-heart {
+            color: darkviolet;
+        }
+
+        .col-lg-4 {
+            &:hover {
+                span.glyphicon {
+                    color: lightgreen;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------
+    Products tiles - end
+-----------------------*/
+
+.cart-menu {
+    line-height: 50px;
+    list-style-type: none;
+}
+
+.cart-items-count {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
